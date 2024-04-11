@@ -58,7 +58,7 @@
 		const loader = new THREE.TextureLoader()
 		loader.crossOrigin = "" // <- en localhost no pasa nada, pero si desplegamos a un servidor, puede ser necesario
 
-		loader.load("/dist/smoke.webp", (texture) => {
+		loader.load("/smoke.webp", (texture) => {
 			// 1. geometria
 			// crear un plano geométrico de 300x300
 			const smokeGeo = new THREE.PlaneGeometry(300, 300)
