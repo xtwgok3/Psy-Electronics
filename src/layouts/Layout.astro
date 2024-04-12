@@ -19,7 +19,6 @@ const { title, description } = Astro.props
 		<meta name="description" content={description} />
 
 		<link rel="icon" href="/favicon.png" sizes="32x32">
-		<link rel="icon" href="/favicon.png" sizes="48x48">
 		<link rel="apple-touch-icon" href="/favicon.png">
 		<link rel="canonical" href="" />
 		<meta name="viewport" content="width=device-width" />
@@ -45,7 +44,7 @@ const { title, description } = Astro.props
 		class="[&_:focus-visible]:outline-none [&_:focus-visible]:ring-2 [&_:focus-visible]:ring-primary"
 	>
 		<SmokeBackground />
-		<div class="mx-auto max-w-6xl px-2 pt-16 md:pt-20 lg:px-10">
+		<div class="mx-auto px-5 lg:px-0 ">
 			<slot />
 		</div>
 	</body>

@@ -3,11 +3,12 @@ import ThemeToggle from "@/components/ThemeToggle.astro"
 
 import GithubIcon from "@/icons/github.astro"
 import LinkedinIcon from "@/icons/linkedin.astro"
+import MapMarker from "@/icons/map-marker.astro"
 ---
 
 
 <footer
-	class="mt-20 flex w-full flex-col place-items-center border-t-2 border-primary pb-20 pt-6 md:flex-row md:justify-between"
+	class="mt-20 flex w-full flex-col place-items-center border-t-2 border-primary pb-20 pt-6 md:flex-row md:justify-around"
 >
 	<a href="https://github.com/xtwgok3"
 		><span class="text-center text-primary color">
@@ -17,25 +18,26 @@ import LinkedinIcon from "@/icons/linkedin.astro"
 			/> Todos los derechos reservados.
 		</span></a
 	>
-	<span aria-hidden="true" class="mt-6 w-full border-t-2 border-primary pt-6 md:hidden"></span>
+	<address class="text-center text-primary color">
+		<a
+			href=""
+			class="inline-block align-middle transition hover:scale-110 hover:opacity-60 mt-2 mb-2"
+			target="_blank"
+			rel="noopener"
+			style="display: -webkit-box;color:rgb(255, 153, 153);"
+			aria-label="ubicación del teatro en google maps, se abrirá en una nueva pestaña"
+		>
+		<MapMarker class="w-6 h-6 mr-0 mt--4"/>
+			<p class="mt-0 mb-0" /> Chaco 139, Termas de Río Hondo,
+			Santiago del Estero, Argentina.</p>
+		</a>
+	</address>
 
 	<nav>
 		<ul
 			class="flex flex-row items-center gap-x-6"
 			aria-label="redes sociales y botón para alternar tema"
 		>
-			<!--<li>
-				<a
-					target="_blank"
-					rel="noopener"
-					aria-label="se abrirá en una nueva pestaña"
-					href="https://instagram.com/"
-					class="inline-block transition any-hover:scale-125 any-hover:opacity-70"
-				>
-					<InstagramIcon class="text-primary" />
-				</a>
-			</li>-->
-
 			<li>
 				<a
 					target="_blank"
